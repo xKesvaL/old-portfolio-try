@@ -1,0 +1,92 @@
+.hover {
+  &-background {
+    --clr-utility: var(--clr-primary);
+    transition: background-color 0.25s ease-out;
+
+    &:hover {
+      background-color: var(--clr-utility) !important;
+    }
+  }
+
+  &-underline {
+    --clr-utility: white;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px; // Would like to use EM but for some reason breaks the animation
+      bottom: 0;
+      left: 0;
+      background-color: var(--clr-utility);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+* {
+  &.accent {
+    --clr-utility: var(--clr-accent);
+
+    &--ultralight {
+      --clr-utility: var(--clr-accent-ultralight);
+    }
+
+    &--light {
+      --clr-utility: var(--clr-accent-light);
+    }
+
+    &--dark {
+      --clr-utility: var(--clr-accent-dark);
+    }
+
+    &--ultradark {
+      --clr-utility: var(--clr-accent-ultradark);
+    }
+  }
+
+  &.primary {
+    --clr-utility: var(--clr-primary);
+
+    &--ultralight {
+      --clr-utility: var(--clr-primary-ultralight);
+    }
+
+    &--light {
+      --clr-utility: var(--clr-primary-light);
+    }
+
+    &--dark {
+      --clr-utility: var(--clr-primary-dark);
+    }
+
+    &--ultradark {
+      --clr-utility: var(--clr-primary-ultradark);
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  display: flex;
+  margin-inline: var(--sp-xxl);
+}

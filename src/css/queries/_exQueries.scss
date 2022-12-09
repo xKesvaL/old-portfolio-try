@@ -1,0 +1,31 @@
+$breakpoint-xs: 18rem;
+$breakpoint-s: 37rem;
+$breakpoint-m: 62rem;
+$breakpoint-l: 75rem;
+$breakpoint-xl: 93rem;
+$breakpoint-xxl: 125rem;
+
+// BP-XXL
+@media screen and (max-width: 125rem) {
+}
+
+// BP-XL
+
+@media screen and (max-width: 93rem) {
+}
+
+// BP-L
+@media screen and (max-width: 75rem) {
+}
+
+// BP-M
+@media screen and (max-width: 62rem) {
+}
+
+// BP-S
+@media screen and (max-width: 37rem) {
+}
+
+// BP-XS
+@media screen and (max-width: 18rem) {
+}

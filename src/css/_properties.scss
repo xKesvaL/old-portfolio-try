@@ -1,0 +1,42 @@
+:root {
+  // Color properties
+  --clr-primary-ultralight: #6400ac;
+  --clr-primary-light: #6400ac;
+  --clr-primary: #4b0082;
+  --clr-primary-dark: #340058;
+  --clr-primary-ultradark: #340058;
+
+  --clr-accent-ultralight: #4ebb00;
+  --clr-accent-light: #45a500;
+  --clr-accent: #378200;
+  --clr-accent-dark: #275e00;
+  --clr-accent-ultradark: #1f4b00;
+
+  --clr-neutral: white;
+  --clr-neutral-dark: rgb(228, 228, 228);
+  --clr-neutral-ultradark: white;
+
+  // Font properties
+  --ff-body: 'Montserrat', sans-serif;
+
+  --fw-black: 900;
+  --fw-bold: 700;
+  --fw-regular: 500;
+
+  --fs-xxs: 0.875rem;
+  --fs-xs: 1rem;
+  --fs-s: 1.25rem;
+  --fs-m: 1.625rem;
+  --fs-l: 2rem;
+  --fs-xl: 3rem;
+  --fs-xxl: 4rem;
+
+  // Spacing properties
+  --sp-xxs: 0.25rem;
+  --sp-xs: 0.5rem;
+  --sp-s: 1rem;
+  --sp-m: 2rem;
+  --sp-l: 4rem;
+  --sp-xl: 7rem;
+  --sp-xxl: 10rem;
+}
