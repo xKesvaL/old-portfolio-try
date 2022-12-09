@@ -1,7 +1,6 @@
 {
-  "name": "wynk",
+  "name": "kesval-portfolio",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "rm -rf build && vite build && touch build/.nojekyll && mv build/404/index.html build/404.html",
