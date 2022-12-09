@@ -1,11 +1,17 @@
 <script lang="ts">
-  import '../css/style.scss';
-  import Header from '$lib/components/Header.svelte';
-  import Footer from '$lib/components/Footer.svelte';
+  import '../app.scss';
+
+  import Waves from '$lib/components/layout/Waves.svelte';
+  import Header from '$lib/components/layout/Header.svelte';
+  import Footer from '$lib/components/layout/Footer.svelte';
 </script>
+
+<Waves />
 
 <Header />
 
-<slot />
+<main>
+  <slot />
+</main>
 
 <Footer />

@@ -1,0 +1,30 @@
+:root {
+  // Font
+  --ft-default: Montserrat, sans-serif;
+  --ft-title: Montserrat, sans-serif;
+  --ft-mono: Ubuntu Mono, monospace;
+
+  // Font Sizes
+  --fs-xxl: 2.5rem;
+  --fs-xl: 2rem;
+  --fs-l: 1.8rem;
+  --fs-m: 1.5rem;
+  --fs-s: 1.2rem;
+  --fs-xs: 1rem;
+  --fs-xxs: 0.9rem;
+
+  // Font Weights
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  // Spacing
+  --sp-xxs: 0.25rem;
+  --sp-xs: 0.5rem;
+  --sp-s: 1rem;
+  --sp-m: 1.5rem;
+  --sp-l: 2rem;
+  --sp-xl: 3rem;
+  --sp-xxl: 5rem;
+}

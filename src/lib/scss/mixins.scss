@@ -1,0 +1,23 @@
+@use 'breakpoints.scss' as *;
+
+@mixin padded-container {
+  width: 100%;
+  padding-inline: var(--sp-s);
+  margin-inline: auto;
+
+  @include for-phone-sm {
+    padding-inline: 0;
+  }
+
+  @include for-tablet-portrait-up {
+    padding-inline: var(--sp-m);
+  }
+
+  @include for-tablet-landscape-up {
+    padding-inline: var(--sp-l);
+  }
+
+  @include for-desktop-up {
+    max-width: 67rem;
+  }
+}

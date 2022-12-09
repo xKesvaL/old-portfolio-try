@@ -1,0 +1,102 @@
+@mixin light-theme {
+  // Colors
+  --primary-color: #7058f5;
+  --primary-color-rgb: 112, 88, 245;
+  --primary-color-contrast: #ffffff;
+
+  --primary-light-color: #b3aae6;
+  --primary-light-color-rgb: 179, 170, 230;
+
+  --primary-lightest-color: #f0f1fe;
+  --primary-lightest-color-rgb: 242, 240, 254;
+
+  --secondary-color: #0ca4a5;
+  --secondary-color-rgb: 12, 164, 165;
+  --secondary-color-contrast: #ffffff;
+
+  --secondary-light-color: #95caca;
+  --secondary-light-color-rgb: 149, 202, 202;
+
+  --secondary-lightest-color: #e3ffff;
+  --secondary-lightest-color-rgb: 227, 255, 255;
+
+  --page-background-color: #faf4fb;
+  --page-background-color-rgb: 250, 244, 251;
+  --page-background-color-hsl-hue: 291;
+  --page-background-color-hsl-saturation: 47%;
+  --page-background-color-hsl-lightness: 97%;
+
+  --text-color: #1c1e26;
+  --text-color-rgb: 28, 30, 38;
+  --text-light-color: #625d65;
+
+  --waves-color-start: rgba(var(--primary-color-rgb), 0.3);
+  --waves-color-end: rgba(var(--primary-color-rgb), 0.1);
+
+  --footer-background: linear-gradient(
+    60deg,
+    var(--waves-color-start) 0%,
+    var(--waves-color-end) 100%
+  );
+
+  --callout-background-color: var(--page-background-color);
+  --callout-info-background-color: #dfeffd;
+  --callout-info-accent-color: #2883f4;
+  --callout-warning-background-color: #fff6b6;
+  --callout-warning-accent-color: #c87820;
+  --callout-error-background-color: #ffe8e8;
+  --callout-error-accent-color: #f95256;
+  --callout-success-background-color: #dcf7ec;
+  --callout-success-accent-color: #009f70;
+}
+
+@mixin dark-theme {
+  // Colors
+
+  --primary-color: #ec7dff;
+  --primary-color-rgb: 236, 125, 255;
+  --primary-color-contrast: #1c1e26;
+
+  --primary-light-color: #b15ebf;
+  --primary-light-color-rgb: 177, 94, 191;
+
+  --primary-lightest-color: #191a29;
+  --primary-lightest-color-rgb: 45, 47, 72;
+
+  --secondary-color: #00c2c2;
+  --secondary-color-rgb: 0, 194, 194;
+  --secondary-color-contrast: #1c1e26;
+
+  --secondary-light-color: #076464;
+  --secondary-light-color-rgb: 7, 100, 100;
+
+  --secondary-lightest-color: #191f1f;
+  --secondary-lightest-color-rgb: 25, 31, 31;
+
+  --page-background-color: #251c26;
+  --page-background-color-rgb: 37, 28, 38;
+  --page-background-color-hsl-hue: 294;
+  --page-background-color-hsl-saturation: 15%;
+  --page-background-color-hsl-lightness: 13%;
+
+  --text-color: #fff;
+  --text-color-rgb: 255, 255, 255;
+  --text-light-color: #b19eb5;
+
+  --callout-background-color: var(--page-background-color);
+  --callout-info-background-color: #1d3874;
+  --callout-info-accent-color: #6ca9f7;
+  --callout-warning-background-color: #724413;
+  --callout-warning-accent-color: #ffca39;
+  --callout-error-background-color: #7c1d20;
+  --callout-error-accent-color: #ff8082;
+  --callout-success-background-color: #004737;
+  --callout-success-accent-color: #00c48f;
+}
+
+:root {
+  @include light-theme;
+  @media (prefers-color-scheme: dark) {
+    @include dark-theme;
+  }
+}
