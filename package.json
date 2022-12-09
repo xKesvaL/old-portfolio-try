@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "rm -rf build && vite build && touch build/.nojekyll && mv build/404/index.html build/404.html",
+    "deploy": "npm run build && npx gh-pages -d build -t true",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -13,8 +14,10 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.13",
+    "i": "^0.3.7",
     "postcss": "^8.4.19",
     "postcss-preset-env": "^7.8.3",
     "postcss-sorting": "^7.0.1",

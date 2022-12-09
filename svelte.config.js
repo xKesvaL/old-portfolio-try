@@ -12,14 +12,17 @@ import postcssPresetEnv from 'postcss-preset-env';
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: preprocess({
-    postcss: {
-      plugins: [autoprefixer(), postcssPresetEnv()]
-    }
-  }),
+  preprocess: [
+    preprocess({
+      preserve: ['module'],
+      postcss: {
+        plugins: [autoprefixer(), postcssPresetEnv()]
+      }
+    })
+  ],
   kit: {
     adapter: adapter(),
-    outDir: './out'
+    trailingSlash: 'always'
   }
 };
 
