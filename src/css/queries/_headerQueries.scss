@@ -12,13 +12,14 @@ $breakpoint-xxl: 125rem;
 // BP-XL
 
 @media screen and (max-width: 93rem) {
+  .container {
+    gap: var(--sp-l) !important;
+    margin-inline: clamp(var(--sp-s), 7%, var(--sp-xl));
+  }
 }
 
 // BP-L
 @media screen and (max-width: 75rem) {
-  .container {
-    margin-inline: clamp(var(--sp-m), 10%, var(--sp-xl));
-  }
 }
 
 // BP-M
@@ -55,10 +56,6 @@ $breakpoint-xxl: 125rem;
     .button-nav {
       display: block !important;
     }
-  }
-
-  .container {
-    margin-inline: clamp(var(--sp-s), 7%, var(--sp-l));
   }
 }
 

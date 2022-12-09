@@ -17,7 +17,7 @@
       position: absolute;
       width: 100%;
       transform: scaleX(0);
-      height: 2px; // Would like to use EM but for some reason breaks the animation
+      height: 2px; // Would like to use REM but for some reason breaks the animation
       bottom: 0;
       left: 0;
       background-color: var(--clr-utility);

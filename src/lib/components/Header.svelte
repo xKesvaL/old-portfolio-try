@@ -39,30 +39,47 @@
     </button>
     <nav class="primary-navigation">
       <ul>
-        <li><a href="/" class="| hover-underline">About</a></li>
-        <li><a href="/" class="| hover-underline">Learn</a></li>
-        <li><a href="/" class="| hover-underline">Contact</a></li>
+        <li><a href="/" class="| hover-underline">Home</a></li>
+        <li>
+          <a href="/" class="| hover-underline">Learn</a>
+        </li>
+        <li>
+          <a href="/" class="| hover-underline">Contact</a>
+        </li>
       </ul>
     </nav>
-    <button class="discover | hover-background accent--ultradark">Discover</button>
+    <button class="discover | hover-background primary--ultradark">Discover</button>
   </div>
 </header>
+<div class="header-placeholder" />
 
 <style lang="scss">
+  .header-placeholder {
+    min-height: 10vh;
+  }
+
   header {
-    background: var(--clr-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     font-weight: var(--fw-bold);
     font-size: var(--fs-m);
+    background-color: var(--clr-neutral-dark-iv);
+    max-height: 10vh;
+    width: 100%;
+    z-index: 99;
 
     .container {
-      justify-content: space-between;
+      justify-content: flex-end;
+      gap: var(--sp-xl);
       align-items: center;
       min-height: 10vh;
-      container: header-container / size;
+      container-type: size;
     }
 
     .trademark {
-      display: flex;
+      margin-right: auto;
       width: clamp(8rem, 25%, 12rem);
 
       img {
@@ -70,29 +87,47 @@
       }
     }
 
-    .primary-navigation ul {
-      display: flex;
-      list-style: none;
-      gap: var(--sp-m);
-
-      &:has(a:hover) > * a:not(:hover) {
+    .primary-navigation {
+      & > ul:has(li:hover) > li:not(:hover) {
         opacity: 0.5;
         color: var(--clr-neutral-ultradark);
       }
 
-      a {
-        text-decoration: none;
-        color: var(--clr-neutral);
-        transition-property: color, opacity;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-out;
+      ul {
+        display: flex;
+        list-style: none;
+        gap: var(--sp-m);
+        font-size: clamp(var(--fs-s), 2vw, var(--fs-m));
+
+        li {
+          transition-property: color, opacity;
+          transition-duration: 0.5s;
+          transition-timing-function: ease-out;
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          position: relative;
+
+          a,
+          span {
+            color: var(--clr-neutral);
+            text-decoration: none;
+          }
+
+          svg {
+            margin-left: var(--sp-xxs);
+            width: 30px;
+            stroke: white;
+            transition: transform 0.25s ease-out;
+          }
+        }
       }
     }
 
     .discover {
-      background-color: var(--clr-accent);
       padding: var(--sp-xs) var(--sp-s);
       cursor: pointer;
+      color: var(--clr-neutral);
     }
 
     .button-nav {

@@ -13,8 +13,11 @@
   --clr-accent-ultradark: #1f4b00;
 
   --clr-neutral: white;
-  --clr-neutral-dark: rgb(228, 228, 228);
-  --clr-neutral-ultradark: white;
+  --clr-neutral-dark: rgb(222, 222, 222);
+  --clr-neutral-ultradark: rgb(200, 200, 200);
+  --clr-neutral-iv: black;
+  --clr-neutral-dark-iv: rgb(18, 18, 18);
+  --clr-neutral-ultradark-iv: rgb(33, 33, 33);
 
   // Font properties
   --ff-body: 'Montserrat', sans-serif;
@@ -39,4 +42,15 @@
   --sp-l: 4rem;
   --sp-xl: 7rem;
   --sp-xxl: 10rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --clr-neutral: black;
+    --clr-neutral-dark: rgb(18, 18, 18);
+    --clr-neutral-ultradark: rgb(33, 33, 33);
+    --clr-neutral-iv: white;
+    --clr-neutral-dark-iv: rgb(222, 222, 222);
+    --clr-neutral-ultradark-iv: rgb(200, 200, 200);
+  }
 }
