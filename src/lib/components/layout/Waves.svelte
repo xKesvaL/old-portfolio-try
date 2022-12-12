@@ -1,3 +1,5 @@
+<!-- Credit to https://github.com/MatFantinel -->
+
 <div class="waves-container">
   <svg
     class="waves"
@@ -63,25 +65,25 @@
   .parallax {
     & > use {
       @media screen and (prefers-reduced-motion: no-preference) {
-        animation: waving 60s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        animation: waving 64s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
       }
     }
 
     & > use:nth-child(1) {
-      animation-delay: -2s;
-      animation-duration: 10s;
+      animation-delay: -1s;
+      animation-duration: 8s;
     }
     & > use:nth-child(2) {
-      animation-delay: -4s;
-      animation-duration: 20s;
+      animation-delay: -10s;
+      animation-duration: 16s;
     }
     & > use:nth-child(3) {
-      animation-delay: -8s;
-      animation-duration: 30s;
+      animation-delay: -10s;
+      animation-duration: 24s;
     }
     & > use:nth-child(4) {
-      animation-delay: -12s;
-      animation-duration: 40s;
+      animation-delay: -25s;
+      animation-duration: 32s;
     }
   }
 

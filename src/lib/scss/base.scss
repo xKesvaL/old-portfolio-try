@@ -11,7 +11,7 @@ body {
   background-color: var(--body-background-color);
   color: var(--text-color);
   fill: var(--text-color);
-  font-family: var(--default-font);
+  font-family: var(--ft-default);
   line-height: 1.3;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -83,10 +83,10 @@ h6 {
 
 ul,
 ol {
-  margin: var(--sp-xs) 0 var(--sp-xs) var(--sp-l);
+  margin: var(--sp-xxs) 0 var(--sp-xxs) var(--sp-l);
 
   li {
-    margin: var(--sp-xs) 0;
+    margin: var(--sp-xxs) 0;
 
     &::marker {
       color: var(--primary-color);
