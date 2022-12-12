@@ -12,8 +12,8 @@
         <Logo />
       </a>
       <div class="nav-links">
-        <a href="/projects" class="nav-link">Projects</a>
-        <a href="/resume" class="nav-link">Resume</a>
+        <a href="/projects" class="nav-link | enhance">Projects</a>
+        <a href="/resume" class="nav-link | enhance">Resume</a>
       </div>
     </div>
     <div class="nav-end">
@@ -59,7 +59,11 @@
             color: var(--text-color);
 
             @media (prefers-reduced-motion: no-preference) {
-              transition: color 0.2s ease;
+              transition: color 0.25s ease;
+              -webkit-transition: color 0.25s ease;
+              -moz-transition: color 0.25s ease;
+              -ms-transition: color 0.25s ease;
+              -o-transition: color 0.25s ease;
             }
 
             &:hover {
