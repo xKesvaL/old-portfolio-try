@@ -12,7 +12,7 @@
     <FooterWave />
   </div>
   <div class="content">
-    <div class="copyright">© {year} KesvaL.</div>
+    <div class="copyright">© {year} KesvaL</div>
     <div class="credits">
       Inspired from <a
         href="https://github.com/MatFantinel"

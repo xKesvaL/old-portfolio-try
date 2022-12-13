@@ -1,9 +1,9 @@
 <script lang="ts">
-  import TwitterIcon from '$lib/svg/socials/Twitter.svelte';
-  import GitHubIcon from '$lib/svg/socials/Github.svelte';
-  import LinkedInIcon from '$lib/svg/socials/Linkedin.svelte';
-  import EmailIcon from '$lib/svg/socials/Email.svelte';
-  import InstagramIcon from '$lib/svg/socials/Instagram.svelte';
+  import TwitterIcon from '$lib/svg/socials/TwitterIcon.svelte';
+  import GitHubIcon from '$lib/svg/socials/GithubIcon.svelte';
+  import LinkedInIcon from '$lib/svg/socials/LinkedinIcon.svelte';
+  import EmailIcon from '$lib/svg/socials/EmailIcon.svelte';
+  import InstagramIcon from '$lib/svg/socials/InstagramIcon.svelte';
 </script>
 
 <!-- Credit to https://github.com/MatFantinel -->

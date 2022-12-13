@@ -48,6 +48,9 @@
   --callout-error-accent-color: #f95256;
   --callout-success-background-color: #dcf7ec;
   --callout-success-accent-color: #009f70;
+
+  --button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  --button-shadow-hover: 0px 4px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 @mixin dark-theme {

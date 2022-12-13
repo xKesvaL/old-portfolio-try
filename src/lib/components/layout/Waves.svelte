@@ -46,10 +46,10 @@
     background: linear-gradient(60deg, var(--waves-color-start) 0%, var(--waves-color-end) 100%);
     position: absolute;
     width: 100%;
-    height: min(65vh, 31rem);
+    height: min(70vh, 40rem);
 
     @include for-phone {
-      height: min(75vh, 25rem);
+      height: min(80vh, 30rem);
     }
   }
 
