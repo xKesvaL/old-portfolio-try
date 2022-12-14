@@ -5,7 +5,7 @@
 >
   <defs>
     <style>
-      .cls-1 {
+      .logo-kesval-cls-1 {
         fill: url(#linear-gradient);
       }
     </style>
@@ -22,7 +22,7 @@
     </linearGradient>
   </defs>
   <g id="GradientRound">
-    <circle class="cls-1" cx="500" cy="500" r="500" />
+    <circle class="logo-kesval-cls-1" cx="500" cy="500" r="500" />
   </g>
   <g id="K">
     <path
