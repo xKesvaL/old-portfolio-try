@@ -46,10 +46,10 @@
     background: var(--bg-gradient);
     position: absolute;
     width: 100%;
-    height: min(70vh, 40rem);
+    height: min(60vh, 35rem);
 
     @include for-phone {
-      height: min(80vh, 30rem);
+      height: min(75vh, 35rem);
     }
   }
 

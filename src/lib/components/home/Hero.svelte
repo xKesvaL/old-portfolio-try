@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--sp-m);
-    padding: var(--sp-xxxl) 0;
+    padding: var(--sp-xxl) 0;
 
     @include for-phone {
       padding: var(--sp-xl) 0;

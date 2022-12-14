@@ -26,6 +26,7 @@
 
   #about {
     position: relative;
+    padding: var(--sp-xxxl) 0;
 
     .avatar {
       width: 16rem;
