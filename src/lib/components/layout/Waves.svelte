@@ -1,6 +1,6 @@
 <!-- Credit to https://github.com/MatFantinel -->
 
-<div class="waves-container">
+<div class="waves-container" aria-hidden="true">
   <svg
     class="waves"
     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@
   @use '../../scss/abstracts/breakpoints' as *;
 
   .waves-container {
-    background: linear-gradient(60deg, var(--waves-color-start) 0%, var(--waves-color-end) 100%);
+    background: var(--bg-gradient);
     position: absolute;
     width: 100%;
     height: min(70vh, 40rem);

@@ -10,7 +10,7 @@
 
 <Header />
 
-<main>
+<main aria-label="Main page">
   <slot />
 </main>
 

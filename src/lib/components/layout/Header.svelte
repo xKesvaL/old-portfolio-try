@@ -5,8 +5,8 @@
 
 <!-- Credit to https://github.com/MatFantinel -->
 
-<header>
-  <nav class="container">
+<header aria-label="Page header">
+  <nav class="container" aria-label="Header navigation">
     <div class="nav-start">
       <a href="/" class="logo">
         <Logo />
@@ -57,18 +57,6 @@
 
           .nav-link {
             color: var(--text-color);
-
-            @media (prefers-reduced-motion: no-preference) {
-              transition: color 0.25s ease;
-              -webkit-transition: color 0.25s ease;
-              -moz-transition: color 0.25s ease;
-              -ms-transition: color 0.25s ease;
-              -o-transition: color 0.25s ease;
-            }
-
-            &:hover {
-              color: var(--primary-color);
-            }
           }
         }
 

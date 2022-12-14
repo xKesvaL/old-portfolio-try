@@ -1,11 +1,11 @@
 @mixin light-theme {
   // Colors
-  --primary-color: #7058f5;
-  --primary-color-rgb: 112, 88, 245;
+  --primary-color: #441895;
+  --primary-color-rgb: 68, 24, 149;
   --primary-color-contrast: #ffffff;
 
-  --primary-light-color: #b3aae6;
-  --primary-light-color-rgb: 179, 170, 230;
+  --primary-light-color: #a795d0;
+  --primary-light-color-rgb: 167, 149, 208;
 
   --primary-lightest-color: #f0f1fe;
   --primary-lightest-color-rgb: 242, 240, 254;
@@ -20,24 +20,20 @@
   --secondary-lightest-color: #e3ffff;
   --secondary-lightest-color-rgb: 227, 255, 255;
 
-  --page-background-color: #faf4fb;
-  --page-background-color-rgb: 250, 244, 251;
-  --page-background-color-hsl-hue: 291;
-  --page-background-color-hsl-saturation: 47%;
-  --page-background-color-hsl-lightness: 97%;
+  --page-background-color: #e5d8e9;
+  --page-background-color-rgb: 229, 216, 233;
+  --page-background-color-hsl-hue: 286;
+  --page-background-color-hsl-saturation: 28%;
+  --page-background-color-hsl-lightness: 88%;
 
-  --text-color: #1c1e26;
-  --text-color-rgb: 28, 30, 38;
+  --text-color: #09090b;
+  --text-color-rgb: 9, 9, 11;
   --text-light-color: #625d65;
 
-  --waves-color-start: rgba(var(--primary-color-rgb), 0.3);
-  --waves-color-end: rgba(var(--primary-color-rgb), 0.1);
+  --waves-color-start: rgba(var(--primary-color-rgb), 0.15);
+  --waves-color-end: rgba(var(--primary-color-rgb), 0.4);
 
-  --footer-background: linear-gradient(
-    60deg,
-    var(--waves-color-start) 0%,
-    var(--waves-color-end) 100%
-  );
+  --bg-gradient: linear-gradient(180deg, var(--waves-color-start) 0%, var(--waves-color-end) 100%);
 
   --callout-background-color: var(--page-background-color);
   --callout-info-background-color: #dfeffd;
@@ -56,12 +52,12 @@
 @mixin dark-theme {
   // Colors
 
-  --primary-color: #ec7dff;
-  --primary-color-rgb: 236, 125, 255;
-  --primary-color-contrast: #1c1e26;
+  --primary-color: #9559f5;
+  --primary-color-rgb: 149, 89, 245;
+  --primary-color-contrast: #ffffff;
 
-  --primary-light-color: #b15ebf;
-  --primary-light-color-rgb: 177, 94, 191;
+  --primary-light-color: #481699;
+  --primary-light-color-rgb: 72, 22, 153;
 
   --primary-lightest-color: #191a29;
   --primary-lightest-color-rgb: 45, 47, 72;
@@ -84,7 +80,7 @@
 
   --text-color: #fff;
   --text-color-rgb: 255, 255, 255;
-  --text-light-color: #b19eb5;
+  --text-light-color: #f2ecf8;
 
   --callout-background-color: var(--page-background-color);
   --callout-info-background-color: #1d3874;

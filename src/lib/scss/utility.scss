@@ -4,45 +4,63 @@
   @include padded-container;
 }
 
-.text-primary {
-  color: var(--primary-color);
-  fill: var(--primary-color);
+.text {
+  &-primary {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+  }
+
+  &-secondary {
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+  }
+
+  &-lighter {
+    color: rgba(var(--text-color-rgb), 0.8);
+    fill: rgba(var(--text-color-rgb), 0.8);
+  }
+
+  &-info {
+    color: var(--callout-info-accent-color);
+    fill: var(--callout-info-accent-color);
+  }
+
+  &-page {
+    color: var(--page-background-color);
+    fill: var(--page-background-color);
+  }
+
+  &-default {
+    color: var(--text-color);
+    fill: var(--text-color);
+
+    &-light {
+      color: var(--text-light-color);
+      fill: var(--text-light-color);
+    }
+  }
 }
 
-.text-secondary {
-  color: var(--secondary-color);
-  fill: var(--secondary-color);
-}
+.bg {
+  &-primary {
+    background-color: var(--primary-color);
 
-.text-lighter {
-  color: rgba(var(--text-color-rgb), 0.8);
-  fill: rgba(var(--text-color-rgb), 0.8);
-}
+    &-light {
+      background-color: var(--primary-light-color);
+    }
+  }
 
-.text-info {
-  color: var(--callout-info-accent-color);
-  fill: var(--callout-info-accent-color);
-}
+  &-secondary {
+    background-color: var(--secondary-color);
+  }
 
-.text-page {
-  color: var(--page-background-color);
-  fill: var(--page-background-color);
-}
+  &-lighter {
+    background-color: rgba(var(--primary-color-rgb), 0.8);
+  }
 
-.bg-primary {
-  background-color: var(--primary-color);
-}
-
-.bg-secondary {
-  background-color: var(--secondary-color);
-}
-
-.bg-lighter {
-  background-color: rgba(var(--primary-color-rgb), 0.8);
-}
-
-.bg-page {
-  background-color: var(--page-background-color);
+  &-page {
+    background-color: var(--page-background-color);
+  }
 }
 
 .justify {

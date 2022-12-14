@@ -5,16 +5,16 @@
 
 <section class="hero">
   <h1 class="title">KesvaL here! Hi! 👋</h1>
-  <p class="intro">
+  <p class="intro" aria-label="Presentation">
     I like to build things. I'm a fullstack developer, a designer, a gamer, a learner, a teacher, a
     builder, a creator, a dreamer and a doer.
   </p>
   <div class="buttons">
-    <a href="/projects" class="button bg-page text-primary">
+    <a href="/projects" class="button bg-page text-default-light">
       <ProjectsIcon />
       Projects
     </a>
-    <a href="/resume" class="button bg-primary text-page">
+    <a href="/resume" class="button bg-primary-light text-default">
       <ExperienceIcon />
       Experience
     </a>

@@ -7,8 +7,8 @@
 
 <!-- Credit to https://github.com/MatFantinel -->
 
-<footer>
-  <div class="wave">
+<footer aria-label="Page footer">
+  <div class="wave" aria-hidden="true">
     <FooterWave />
   </div>
   <div class="content">
@@ -19,7 +19,7 @@
         target="_blank"
         class="enhance"
         rel="noreferrer">Matheus Fantinel</a
-      > ♥.
+      >'s portfolio ♥.
     </div>
     <div class="socials">
       <Socials />
@@ -31,7 +31,7 @@
   footer {
     height: 20rem;
     width: 100%;
-    background: var(--footer-background);
+    background: var(--bg-gradient);
     display: grid;
     grid-template-rows: 7.5rem 1fr;
 
