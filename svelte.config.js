@@ -1,9 +1,9 @@
 // Auto Adapter
-import adapter from '@sveltejs/adapter-auto';
-/*
-Adapter for production (uploading to Github)
+// import adapter from '@sveltejs/adapter-auto';
+
+// Adapter for production (uploading to Github)
 import adapter from '@sveltejs/adapter-static';
-*/
+
 import preprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 import postcssPresetEnv from 'postcss-preset-env';

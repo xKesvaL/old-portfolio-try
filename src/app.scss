@@ -1,8 +1,8 @@
 @use '$lib/scss/reset';
 @use '$lib/scss/themes';
-@use '$lib/scss/breakpoints';
+@use '$lib/scss/abstracts';
 @use '$lib/scss/variables';
-@use '$lib/scss/mixins';
 @use '$lib/scss/base';
+@use '$lib/scss/components';
 @use '$lib/scss/utility';
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap';

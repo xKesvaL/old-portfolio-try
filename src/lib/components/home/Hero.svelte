@@ -22,7 +22,7 @@
 </section>
 
 <style lang="scss">
-  @use '../../scss/breakpoints.scss' as *;
+  @use '../../scss/abstracts/breakpoints.scss' as *;
 
   .hero {
     display: flex;

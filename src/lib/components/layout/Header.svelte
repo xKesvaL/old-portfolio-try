@@ -23,7 +23,7 @@
 </header>
 
 <style lang="scss">
-  @use '../../scss/breakpoints' as *;
+  @use '../../scss/abstracts/breakpoints' as *;
 
   header {
     position: relative;

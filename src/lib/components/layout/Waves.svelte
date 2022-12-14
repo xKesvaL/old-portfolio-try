@@ -40,7 +40,7 @@
 </div>
 
 <style lang="scss">
-  @use '../../scss/breakpoints' as *;
+  @use '../../scss/abstracts/breakpoints' as *;
 
   .waves-container {
     background: linear-gradient(60deg, var(--waves-color-start) 0%, var(--waves-color-end) 100%);
