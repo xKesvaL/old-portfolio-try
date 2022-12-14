@@ -710,8 +710,8 @@
     filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.2));
 
     &:hover {
-      #svga-group-eyebrows-left,
-      #svga-group-eyebrows-right {
+      #svga-group-eyebrows-left-move,
+      #svga-group-eyebrows-right-move {
         animation: eyebrow-raise 1s ease-out infinite forwards;
       }
     }
