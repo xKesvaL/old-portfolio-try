@@ -14,6 +14,7 @@
       <div class="nav-links">
         <a href="/projects" class="nav-link | enhance">Projects</a>
         <a href="/resume" class="nav-link | enhance">Resume</a>
+        <a href="/blog" class="nav-link | enhance">Blog</a>
       </div>
     </div>
     <div class="nav-end">
