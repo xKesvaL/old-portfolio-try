@@ -3,7 +3,7 @@
   import ProjectsIcon from '$lib/svg/icons/ProjectsIcon.svelte';
 </script>
 
-<section class="hero">
+<section id="hero">
   <h1 class="title">KesvaL here! Hi! 👋</h1>
   <p class="intro" aria-label="Presentation">
     I like to build things. I'm a fullstack developer, a designer, a gamer, a learner, a teacher, a
@@ -24,7 +24,7 @@
 <style lang="scss">
   @use '../../scss/abstracts/breakpoints.scss' as *;
 
-  .hero {
+  #hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
