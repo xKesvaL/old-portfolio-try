@@ -47,6 +47,11 @@
 
   --button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
   --button-shadow-hover: 0px 4px 10px 8px rgba(0, 0, 0, 0.2);
+
+  --card-background-color: #ffffff;
+  --card-background-color-rgb: 255, 255, 255;
+  --card-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0px 4px 10px 8px rgb(0 0 0 / 10%);
 }
 
 @mixin dark-theme {
@@ -91,6 +96,9 @@
   --callout-error-accent-color: #ff8082;
   --callout-success-background-color: #004737;
   --callout-success-accent-color: #00c48f;
+
+  --card-background-color: #32343e;
+  --card-background-color-rgb: 50, 52, 62;
 }
 
 :root {
