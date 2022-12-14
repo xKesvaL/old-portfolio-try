@@ -42,6 +42,7 @@
     @include for-phone {
       grid-template-columns: 1fr;
       justify-items: center;
+      gap: var(--sp-l);
     }
 
     .info {

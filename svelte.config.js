@@ -3,10 +3,17 @@
 
 // Adapter for production (uploading to Github)
 import adapter from '@sveltejs/adapter-static';
+import { mdsvex } from 'mdsvex';
 
 import preprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 import postcssPresetEnv from 'postcss-preset-env';
+
+import rehypeExternalLinks from 'rehype-external-links';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+
+const extensions = ['.svelte', '.md'];
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,8 +25,28 @@ const config = {
       postcss: {
         plugins: [autoprefixer(), postcssPresetEnv()]
       }
+    }),
+    mdsvex({
+      extensions: ['.md'],
+      rehypePlugins: [
+        rehypeExternalLinks,
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'append',
+            content: {
+              type: 'element',
+              tagName: 'span',
+              properties: { className: ['heading-link'] },
+              children: [{ type: 'text', value: '#' }]
+            }
+          }
+        ]
+      ]
     })
   ],
+  extensions: extensions,
   kit: {
     adapter: adapter()
   }
