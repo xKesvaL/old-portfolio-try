@@ -3,8 +3,7 @@
   import Hero from '$lib/components/home/Hero.svelte';
   import RecentProjects from '$lib/components/home/RecentProjects.svelte';
 
-  export let data;
-  let { projects, posts }: { [key: string]: Post[] } = data;
+  let projects: Post[] = [];
 </script>
 
 <div class="container">

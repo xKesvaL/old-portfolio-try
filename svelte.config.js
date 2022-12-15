@@ -9,11 +9,14 @@ import preprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 import postcssPresetEnv from 'postcss-preset-env';
 
+import abbr from 'remark-abbr';
+
+import rehypeUrls from 'rehype-urls';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-const extensions = ['.svelte', '.md'];
+const extensions = ['.svelte', '.svx'];
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -27,7 +30,7 @@ const config = {
       }
     }),
     mdsvex({
-      extensions: ['.md'],
+      remarkPlugins: [abbr],
       rehypePlugins: [
         rehypeExternalLinks,
         rehypeSlug,
