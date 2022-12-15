@@ -1,8 +1,8 @@
 // Auto Adapter
-// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-auto';
 
-// Adapter for production (uploading to Github)
-import adapter from '@sveltejs/adapter-static';
+// Adapter for static pages
+// import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 
 import preprocess from 'svelte-preprocess';
@@ -48,7 +48,14 @@ const config = {
   ],
   extensions: extensions,
   kit: {
-    adapter: adapter()
+    adapter: adapter({
+      edge: false,
+      split: false
+    }),
+    prerender: {
+      crawl: true,
+      entries: ['*']
+    }
   }
 };
 

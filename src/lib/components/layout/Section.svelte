@@ -1,8 +1,8 @@
 <script lang="ts">
   export let title: string;
-  export let description: string | null;
-  export let buttonText: string | null;
-  export let buttonUrl: string | null;
+  export let description: string | null = null;
+  export let buttonText: string | null = null;
+  export let buttonUrl: string | null = null;
   export let buttonClass: string = 'bg-primary text-default';
 
   export let direction: 'column' | 'row' = 'column';

@@ -15,7 +15,8 @@ const get = (type: 'projects' | 'posts') => {
     const project: any = imports[path];
     projects.push({
       ...project.metadata,
-      ...project.default.render()
+      ...project.default.render(),
+      type
     });
   }
 
@@ -42,6 +43,7 @@ const get = (type: 'projects' | 'posts') => {
     // Get posts with same tags
     for (const tag of project.tags) {
       allRelatedProjects = allRelatedProjects.concat(categories[tag]);
+      allRelatedProjects = [...new Set(allRelatedProjects)];
     }
 
     let relatedProjects: any[] = [];
@@ -99,7 +101,7 @@ const get = (type: 'projects' | 'posts') => {
           .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
           .sort((a, b) => b.count - a.count)
           .slice(0, 3)
-          .map((x) => x.project)
+          .map((x) => x.post)
       };
     });
 

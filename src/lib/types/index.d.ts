@@ -20,7 +20,10 @@ interface Post {
   hidden: boolean;
   html: string;
   readingTime: string;
-  project: any;
+  project: Post;
+  post: Post;
+  relatedProjects: Post[];
+  type: 'Project' | 'Post';
 }
 
 interface TagsAndProjects {
