@@ -1,5 +1,5 @@
 ---
-slug: 2019-year-in-review
+slug: one
 title: Cool things I did and learned in 2019
 date: 2019-12-29
 excerpt: 'A quick look back at 2019 and what I learned during this year.'

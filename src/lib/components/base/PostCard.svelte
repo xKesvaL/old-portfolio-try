@@ -4,7 +4,7 @@
   import Image from './Image.svelte';
 
   export let post: Post;
-  export let type: 'post' | 'project';
+  export let type: 'post' | 'projects';
   export let showImage = true;
 </script>
 

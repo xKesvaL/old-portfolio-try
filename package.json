@@ -17,7 +17,6 @@
     "@sveltejs/kit": "next",
     "@types/prismjs": "^1.26.0",
     "autoprefixer": "^10.4.13",
-    "i": "^0.3.7",
     "mdsvex": "^0.10.6",
     "postcss": "^8.4.19",
     "postcss-preset-env": "^7.8.3",
@@ -35,7 +34,7 @@
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
-    "vite": "^3.2.4"
+    "vite": "latest"
   },
   "type": "module"
 }

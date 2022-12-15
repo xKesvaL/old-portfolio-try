@@ -1,17 +1,19 @@
 <script lang="ts">
-  import '../app.scss';
+  import '$lib/app.scss';
 
   import Waves from '$lib/components/layout/Waves.svelte';
   import Header from '$lib/components/layout/Header.svelte';
   import Footer from '$lib/components/layout/Footer.svelte';
 </script>
 
-<Waves />
+<div class="markdown-layout">
+  <Waves />
 
-<Header />
+  <Header />
 
-<main aria-label="Main page">
-  <slot />
-</main>
+  <main aria-label="Main page">
+    <slot />
+  </main>
 
-<Footer />
+  <Footer />
+</div>

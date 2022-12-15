@@ -55,7 +55,7 @@ const get = (type: 'projects' | 'posts') => {
         rel.count++;
       } else {
         relatedProjects.push({
-          post: { ...relProject, readingTime: readingTime(relProject.html || '').text },
+          post: { ...relProject, readingTime: readingTime(relProject.html).text },
           count: 1,
           date: relProject.date
         });
@@ -67,7 +67,7 @@ const get = (type: 'projects' | 'posts') => {
       relatedProjects = projects
         .filter((x) => x.slug !== project.slug)
         .map((x) => ({
-          post: { ...x, readingTime: readingTime(x.html || '').text },
+          post: { ...x, readingTime: readingTime(x.html).text },
           count: 0,
           date: x.date
         }));
